@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 import { MyfirstcomponentComponent } from './myfirstcomponent/myfirstcomponent.component';
 import { MysecondcomponentComponent } from './mysecondcomponent/mysecondcomponent.component';
 
@@ -15,7 +16,7 @@ const routes: Routes = [
   },
   {
     path:"",
-    component:MyfirstcomponentComponent,
+    component:HomeComponent,
     pathMatch:"full"
   }
 ];

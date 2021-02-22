@@ -10,11 +10,11 @@ app.use(express.static(__dirname + '/dist/angularapp'));
 
 app.get('/', function(req,res) {
     
-res.sendFile(path.join('/dist/angularapp/index.html'));
+res.sendFile(path.join(__dirname+'/dist/angularapp/index.html'));
 });
 app.get('/second', function(req,res) {
     
-    res.sendFile(path.join('/dist/angularapp/src/app/mysecondcomponent'));
+    res.sendFile(path.join(__dirname+'/dist/angularapp/index.html'));
     });
   
   module.exports = router;
