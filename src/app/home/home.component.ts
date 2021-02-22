@@ -14,7 +14,6 @@ export class HomeComponent implements OnInit {
     this.alertify.success("Hoşgeldiniz :)")
   }
   storage(){
-    localStorage.setItem("deneme","deneme")
   }
 
 }
