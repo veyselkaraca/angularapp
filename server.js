@@ -14,7 +14,7 @@ res.sendFile(path.join('/dist/angularapp/index.html'));
 });
 app.get('/second', function(req,res) {
     
-    res.sendFile(path.join('/dist/angularapp//src/app/mysecondcomponent'));
+    res.sendFile(path.join('/dist/angularapp/src/app/mysecondcomponent'));
     });
   
   module.exports = router;
