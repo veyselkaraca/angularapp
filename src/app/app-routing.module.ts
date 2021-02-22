@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { MyfirstcomponentComponent } from './myfirstcomponent/myfirstcomponent.component';
+import { MysecondcomponentComponent } from './mysecondcomponent/mysecondcomponent.component';
 
 const routes: Routes = [
   {
@@ -9,8 +10,13 @@ const routes: Routes = [
     component:MyfirstcomponentComponent
   },
   {
+    path:"second",
+    component:MysecondcomponentComponent
+  },
+  {
     path:"",
-    component:AppComponent
+    component:AppComponent,
+    pathMatch:"full"
   }
 ];
 

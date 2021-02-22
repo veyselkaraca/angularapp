@@ -12,13 +12,13 @@ app.get('/', function(req,res) {
     
 res.sendFile(path.join(__dirname+'/dist/angularapp/index.html'));
 });
-router.get('/', function (req, res) {
-    res.send('Wiki home page');
+router.get('/first', function (req, res) {
+    res.send('first');
   })
   
   // About page route.
-  router.get('/about', function (req, res) {
-    res.sendFile(path.join(__dirname+'/dist/angularapp/myfirstcomponent'))
+  router.get('/second', function (req, res) {
+    res.sendFile(path.join(__dirname+'/dist/angularapp/mysecondcomponent'))
   })
   
   module.exports = router;
