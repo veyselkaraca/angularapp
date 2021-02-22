@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AppComponent } from './app.component';
 import { MyfirstcomponentComponent } from './myfirstcomponent/myfirstcomponent.component';
 
 const routes: Routes = [
   {
-    path:"/first",
+    path:"first",
     component:MyfirstcomponentComponent
+  },
+  {
+    path:"",
+    component:AppComponent
   }
 ];
 
