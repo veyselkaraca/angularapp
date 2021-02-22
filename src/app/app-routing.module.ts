@@ -15,7 +15,7 @@ const routes: Routes = [
   },
   {
     path:"",
-    component:AppComponent,
+    component:MyfirstcomponentComponent,
     pathMatch:"full"
   }
 ];

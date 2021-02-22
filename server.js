@@ -15,8 +15,6 @@ res.sendFile(path.join(__dirname+'/dist/angularapp/index.html'));
 router.get('/first', function (req, res) {
     res.send('first');
   })
-  
-  // About page route.
   router.get('/second', function (req, res) {
     res.sendFile(path.join(__dirname+'/dist/angularapp/mysecondcomponent'))
   })
