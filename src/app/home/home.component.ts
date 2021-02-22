@@ -13,5 +13,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.alertify.success("Hoşgeldiniz :)")
   }
+  storage(){
+    localStorage.setItem("deneme","deneme")
+  }
 
 }
