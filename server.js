@@ -18,7 +18,7 @@ router.get('/', function (req, res) {
   
   // About page route.
   router.get('/about', function (req, res) {
-    res.send('About this wiki');
+    res.sendFile(path.join(__dirname+'/dist/angularapp/myfirstcomponent'))
   })
   
   module.exports = router;
