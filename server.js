@@ -10,14 +10,12 @@ app.use(express.static(__dirname + '/dist/angularapp'));
 
 app.get('/', function(req,res) {
     
-res.sendFile(path.join(__dirname+'/dist/angularapp/index.html'));
+res.sendFile(path.join('/dist/angularapp/index.html'));
 });
-router.get('/first', function (req, res) {
-    res.send('first');
-  })
-  router.get('/second', function (req, res) {
-    res.sendFile(path.join(__dirname+'/dist/angularapp/mysecondcomponent'))
-  })
+app.get('/second', function(req,res) {
+    
+    res.sendFile(path.join('/dist/angularapp//src/app/mysecondcomponent'));
+    });
   
   module.exports = router;
 app.listen(process.env.PORT || 8080);
